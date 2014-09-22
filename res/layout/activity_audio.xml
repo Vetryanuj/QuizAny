@@ -1,0 +1,84 @@
+<!-- This file is /res/layout/record.xml -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#005dab"
+		>
+
+	<Button
+	    android:id="@+id/bgnBtn"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="25dp"
+	    android:background="#008adc"
+	    android:text="@string/srtBtn"
+	    android:textColor="#ffffff" />
+
+	<Button
+	    android:id="@+id/stpBtn"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/bgnBtn"
+	    android:layout_marginTop="26dp"
+	    android:background="#008adc"
+	    android:text="@string/stpBtn"
+	    android:textColor="#ffffff" />
+
+	<Button
+	    android:id="@+id/playRecordingBtn"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/stpBtn"
+	    android:layout_marginTop="25dp"
+	    android:background="#008adc"
+	    android:text="@string/playBtn"
+	    android:textColor="#ffffff" />
+
+	<Button
+	    android:id="@+id/stpPlay"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/playRecordingBtn"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="50dp"
+	    android:background="#008adc"
+	    android:textColor="#ffffff"
+	    android:text="@string/stpPlayBtn" />
+
+	<ProgressBar
+	    android:id="@+id/progressBar1"
+	    style="?android:attr/progressBarStyleLarge"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/openfolder"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="34dp"
+	    android:visibility="invisible" />
+
+	<Button
+	    android:id="@+id/openfolder"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/stpPlay"
+	    android:layout_centerHorizontal="true"
+	    android:background="#008adc"
+	    android:textColor="#ffffff"
+	    android:layout_marginTop="39dp"
+	    android:text="@string/open" />
+
+	<Chronometer
+	    android:id="@+id/chronometer1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/progressBar1"
+	    android:textColor="#ffffff"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="90dp"
+	     />
+
+</RelativeLayout>
